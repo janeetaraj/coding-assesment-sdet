@@ -5,6 +5,10 @@ import io.cucumber.junit.Cucumber;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(plugin = {"pretty", "html:target/cucumber", "json:target/cucumber.json"}, strict = true)
+@CucumberOptions(
+        plugin = {"pretty", "html:target/cucumber", "json:target/cucumber.json"},
+        strict = true,
+        tags = {"@electionsQuery"}
+)
 public class RunCucumberTest {
 }
