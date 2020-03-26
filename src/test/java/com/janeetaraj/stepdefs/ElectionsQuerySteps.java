@@ -50,7 +50,7 @@ public class ElectionsQuerySteps {
                 apiKey = "";
                 break;
 
-            case "no":
+            case "not passed":
                 isKeyPass = false;
                 break;
 
