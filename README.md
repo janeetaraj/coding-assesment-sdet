@@ -22,6 +22,6 @@ _Note: Jenkins username and password sent in email_
 
 Jenkins Job - [coding-assesment-sdet](http://ec2-18-216-45-232.us-east-2.compute.amazonaws.com:8080/job/coding-assesment-sdet)
 
-Also published the reports as part of build and you can view the cucumber test report in Jenkins here - [Cucumber reports](http://ec2-18-216-45-232.us-east-2.compute.amazonaws.com:8080/job/coding-assesment-sdet/job/master/5/cucumber-html-reports/overview-features.html)
+Also published the reports as part of build and you can view the cucumber test report in Jenkins here - [Cucumber reports](http://ec2-18-216-45-232.us-east-2.compute.amazonaws.com:8080/job/coding-assesment-sdet/job/master/7/cucumber-html-reports/overview-features.html)
 
 _Note: The example url above to cucumber reports should be replaced with corresponding latest build number_
