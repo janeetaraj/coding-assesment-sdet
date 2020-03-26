@@ -18,8 +18,10 @@ mvn test
 
 Hosted Jenkins Server in an AWS ec2 instance(t2.micro) to demonstrate the tests
 
-Jenkins Job - [teds-api job](http://ec2-35-173-213-215.compute-1.amazonaws.com:8080/job/teds-api)
+_Note: Jenkins username and password sent in email_
 
-Also published the reports as part of build and you can view the cucumber test report in Jenkins here - [Cucumber reports](http://ec2-35-173-213-215.compute-1.amazonaws.com:8080/job/teds-api/job/master/5/cucumber-html-reports/overview-features.html)
+Jenkins Job - [coding-assesment-sdet](http://ec2-18-216-45-232.us-east-2.compute.amazonaws.com:8080/job/coding-assesment-sdet)
 
-_Note: The example url above to reports should be replaced with corresponding build number_
+Also published the reports as part of build and you can view the cucumber test report in Jenkins here - [Cucumber reports](http://ec2-18-216-45-232.us-east-2.compute.amazonaws.com:8080/job/coding-assesment-sdet/job/master/5/cucumber-html-reports/overview-features.html)
+
+_Note: The example url above to cucumber reports should be replaced with corresponding latest build number_
