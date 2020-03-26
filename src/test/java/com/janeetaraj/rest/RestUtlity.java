@@ -18,11 +18,13 @@ public class RestUtlity {
     private CloseableHttpClient httpClient;
     public static HttpResponse httpResponse;
 
-    public void doGetRequest(String apiKey) {
+    public void doGetRequest(String apiKey, boolean isKeyPass) {
         try {
             //Construct the elections query url and add api key as parameter
             URIBuilder builder = new URIBuilder(constants.ELECTION_URL);
-            builder.setParameter("key", apiKey);
+            if (isKeyPass) {
+                builder.setParameter("key", apiKey);
+            }
 
             //Create a http get request
             HttpGet getRequest = new HttpGet(builder.build());

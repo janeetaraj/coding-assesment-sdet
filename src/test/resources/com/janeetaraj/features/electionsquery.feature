@@ -7,11 +7,12 @@ Feature: Google Civic API Elections Query
     Then I get a response status code <statusCode>
 
     Examples:
-      | scenario           | apiKey    | statusCode |
-      | api key is valid   | "valid"   | 200        |
-      | api Key is invalid | "invalid" | 400        |
-      | api Key is null    | "null"    | 400        |
-      | api Key is empty   | "empty"   | 400        |
+      | scenario             | apiKey    | statusCode |
+      | api key is valid     | "valid"   | 200        |
+      | api Key is invalid   | "invalid" | 400        |
+      | api Key is null      | "null"    | 400        |
+      | api Key is empty     | "empty"   | 400        |
+      | no api Key is passed | "no"      | 403        |
 
 
     #In this test case I am assuming the list of elections coming back in response should atleast have 1 element
