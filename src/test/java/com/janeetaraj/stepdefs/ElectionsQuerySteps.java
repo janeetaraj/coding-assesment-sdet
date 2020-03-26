@@ -29,7 +29,6 @@ public class ElectionsQuerySteps {
 
     private String apiKey;
     RestUtlity restUtlity = new RestUtlity();
-    boolean isKeyPass = true;
 
     @Given("API Key is {string}")
     public void setAPIKey(String apiKeyValue) {
@@ -50,35 +49,15 @@ public class ElectionsQuerySteps {
                 apiKey = "";
                 break;
 
-            case "not passed":
-                isKeyPass = false;
-                break;
-
             default:
                 apiKey = apiKeyValue;
 
         }
     }
 
-    @Given("A valid API Key")
-    public void setValidAPIKey() {
-        apiKey = constants.API_KEY;
-    }
-
-    @Given("An invalid API Key")
-    public void setInvalidAPIKey() {
-        apiKey = "invalidkey";
-    }
-
     @When("I call Elections Query")
     public void callElectionsQuery() {
-        restUtlity.doGetRequest(apiKey, isKeyPass);
-    }
-
-    @When("I call Elections Query without api key")
-    public void callElectionsQueryWithoutApiKey() {
-
-
+        restUtlity.doGetRequest(apiKey);
     }
 
     @Then("I get a response status code {int}")
