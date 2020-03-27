@@ -22,7 +22,7 @@ public class RestUtlity {
         try {
             //Construct the elections query url and add api key as parameter
             URIBuilder builder = new URIBuilder(constants.ELECTION_URL);
-            if (!(apiKey != null && !apiKey.isEmpty() && apiKey.equals("not passed"))) {
+            if (!"not passed".equalsIgnoreCase(apiKey)) {
                 builder.setParameter("key", apiKey);
             }
 
